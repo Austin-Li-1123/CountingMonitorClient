@@ -13,7 +13,7 @@ function TriggerComparison() {
 
   if (!isReady) {
     connection = new signalR.HubConnectionBuilder()
-      .withUrl(signalRUrl)
+      .withUrl('/chat')
       .configureLogging(signalR.LogLevel.Information)
       .build();
 
