@@ -9,6 +9,8 @@ function TriggerComparison() {
   const signalRUrl = process.env.REACT_APP_SIGNALR_URL;
   let connection;
 
+  console.log("I am here")
+
   if (!isReady) {
     connection = new signalR.HubConnectionBuilder()
       .withUrl(signalRUrl)
